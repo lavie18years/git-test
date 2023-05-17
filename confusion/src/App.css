@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.column{
+  float: left;
+  width: 30%;
+  margin: 20px;
+  background-size: contain;
+}
+.card img{
+  width:100% ;
+  height: auto;
+}
+
+.but{
+  background-color: black;
+}
+
+.back-ground {
+  text-align: left;
+  background-color: black;
+  padding: 1px 0px;
+}
+
+.title{
+  background-color: rgba(224, 223, 223, 0.5);
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.active{
+  color:aliceblue;
+  padding: 17px 20px;
+  text-decoration: none;
+}
+
+
+.active:hover {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.but button{
+  background-color: black;
+  color: white;
+}
+
