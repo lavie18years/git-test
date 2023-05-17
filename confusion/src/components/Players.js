@@ -10,7 +10,7 @@ export default function players() {
            <img src={player.img}/>
              <h3>{player.name}</h3>
              <p className='title'>{player.club}</p>
-             <p><button>Detail</button></p>
+             <p><button>Details</button></p>
            </div>
          </div>
         ))}
