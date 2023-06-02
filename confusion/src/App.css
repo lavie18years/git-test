@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
@@ -32,79 +33,71 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
 
 .container {
-  display: contents;
+  position: relative;
 }
 
-.task {
+.column{
+  float: left;
+  width: 30%;
+  margin: 20px;
+  background-size: contain;
+}
+.card img{
+  width:100% ;
+  height: auto;
+}
+
+.but{
   background-color: black;
-  text-align: left;
-  padding: 20px 0px;
-  padding-left: 25px;
 }
 
-.active {
-  color: aliceblue;
+.back-ground {
+  text-align: left;
+  background-color: black;
+  padding: 1px 0px;
+}
+
+.title{
+  text-align: center;
+  padding: 10px 0px;
+}
+
+
+.active{
   padding: 17px 20px;
   text-decoration: none;
 }
+
 
 .active:hover {
   background-color: rgba(255, 255, 0, 0.5);
 }
 
-.column {
-  float: left;
-  width: 32%;
-  margin: 10px;
-  background-size: auto;
-  background-color: rgb(236, 232, 232);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.but {
+.re button{
   background-color: black;
-}
-
-.but button {
-  background-color: black;
-}
-
-.but a{
   color: white;
 }
 
-.active {
-  text-decoration: none;
+.re {
+  background-color: black;
 }
 
-.foot {}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+div.card {
+  background-color: rgba(224, 223, 223, 0.5);
 }
 
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
+.footer {
+  position: absolute;
+  bottom: -1000px;
+  background-color: rgb(167, 167, 3);
+  width: 100%;
+  color: white;
 }
 
 .overlay {
@@ -118,12 +111,10 @@
   visibility: hidden;
   opacity: 0;
 }
-
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
-
 .popup {
   margin: 70px auto;
   padding: 5px;
@@ -133,11 +124,7 @@
   position: relative;
   transition: all 5s ease-in-out;
 }
-
-.popup img {
-  width: 100%;
-}
-
+.popup img{ width: 100%;}
 .popup h2 {
   margin-top: 0;
   color: #333;
@@ -149,16 +136,12 @@
   top: 20px;
   right: 30px;
   transition: all 200ms;
-  font-size:s 30px;
+  font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: #333;
 }
-
-.popup .close:hover {
-  color: #06D85F;
-}
-
+.popup .close:hover {color: #06D85F;}
 .popup .content {
   max-height: 30%;
   overflow: auto;
